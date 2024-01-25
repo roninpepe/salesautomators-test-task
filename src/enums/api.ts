@@ -14,7 +14,7 @@ export enum EAPIFields {
 	source = '5c689a2cb2679782cc74ab12fdbca70c76719033',
 	description = '3c0dbf06f2a017a9e7662e56c41d5ab1a82675a6',
 	// Service location
-	addres = '93accd14f4daf923b39eb7819d049cd5e6ee1c5e',
+	address = '93accd14f4daf923b39eb7819d049cd5e6ee1c5e',
 	area = '99447659e02022674c1c87a574f485395d175e50',
 	// Scheduled
 	date = 'df988f19e7204a746b6f17873549b772dff4d103',

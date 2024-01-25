@@ -1,5 +1,5 @@
 import { EAPIFields, EArea, EJobSource, EJobType } from 'enums/_';
-import { IUser } from 'types/_';
+import { IUser } from './pipedrive';
 
 export interface IAPIMethods {
 	post?: object | null;
@@ -18,14 +18,14 @@ export interface IAPIDealsJob {
 	[EAPIFields.description]?: string;
 }
 export interface IAPIDealsLocation {
-	[EAPIFields.addres]: string;
+	[EAPIFields.address]: string;
 	[EAPIFields.area]: EArea;
 }
 export interface IAPIDealsSchedule {
 	[EAPIFields.date]: string;
 	[EAPIFields.time_start]: string;
 	[EAPIFields.time_end]: string;
-	[EAPIFields.technician]: IUser;
+	[EAPIFields.technician]: number;
 }
 
 export interface IAPIRequestBodyDeals
@@ -34,4 +34,9 @@ export interface IAPIRequestBodyDeals
 		IAPIDealsLocation,
 		IAPIDealsSchedule {
 	title: string;
+}
+
+export interface IAPIResponseDeals extends IAPIRequestBodyDeals {
+	id: number;
+	[EAPIFields.technician]: IUser;
 }

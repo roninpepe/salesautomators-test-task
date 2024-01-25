@@ -19,10 +19,10 @@ export const newDealRequestBody: IAPIRequestBodyDeals = {
 	[EAPIFields.type]: EJobType.Recall,
 	[EAPIFields.source]: EJobSource.Pinellas,
 	[EAPIFields.description]: 'Lorem ipsum',
-	[EAPIFields.addres]: '123 William St, New York, NY 10038, США',
+	[EAPIFields.address]: '123 William St, New York, NY 10038, США',
 	[EAPIFields.area]: EArea.Tampa,
 	[EAPIFields.date]: '2035-12-31',
 	[EAPIFields.time_start]: '00:00:00',
 	[EAPIFields.time_end]: '23:55:00',
-	[EAPIFields.technician]: technician
+	[EAPIFields.technician]: technician.id
 };

@@ -10,14 +10,14 @@ interface IFieldsJob {
 	description?: string;
 }
 interface IFieldsLocation {
-	addres: string;
+	address: { label: string };
 	area: EArea;
 }
 interface IFieldsSchedule {
 	date: string;
 	time_start: string;
 	time_end: string;
-	technician: IUser;
+	technician: number;
 }
 
 export interface IFields
